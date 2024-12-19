@@ -10,9 +10,9 @@
 
 <h3 align="left">Contact me:</h3>
 <p align="left">
-<a href="https://www.linkedin.com/in/%E5%AD%90%E9%9B%8B-%E9%99%B3-11087825b/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="陳子雋" height="30" width="40" /></a>
-<a href="https://www.facebook.com/profile.php?id=100011698690769" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="陳子雋" height="30" width="40" /></a>
-<a href="https://instagram.com/matthew_happiness_1207" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="matthew_happiness_1207" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/kalpesh11111/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="loading" height="30" width="40" /></a>
+<!-- <a href="https://www.facebook.com/profile.php?id=" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="loading" height="30" width="40" /></a> -->
+<a href="https://www.instagram.com/xploitoverload?igsh=cnZ2M2hwamNtcjF1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="loading" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
