@@ -1,5 +1,7 @@
 ### Hello world, build the universe with me!!!
-![snake](https://raw.githubusercontent.com/xploitoverload/XploitOverload/refs/heads/main/github-user-contribution.svg)
+![Snake](https://raw.githubusercontent.com/xploitoverload/snk/output/github-contribution-grid-snake-dark.svg?palette=github-dark)
+
+
 
 <h1 align="center">Hello world, I'm xploitoverload</h1>
 <h3 align="center">Undergraduate | EC Engineer | Hacker | Developer | CTF | Python | JavaScript | C | Java | React |<br/> - Build the universe with me</h3>
