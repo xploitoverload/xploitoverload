@@ -6,7 +6,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=xploitoverload&label=Profile%20views&color=FF79BC&style=flat" alt="xploitoverload" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=xploitoverload" alt="xploitoverload" /></a> </p>
+<p align="left"> <a href="https://github.com/xploitoverload/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=xploitoverload" alt="xploitoverload" /></a> </p>
 
 <h3 align="left">Contact me:</h3>
 <p align="left">
