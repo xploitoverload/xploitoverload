@@ -4,7 +4,7 @@
 
 
 <h1 align="center">Hello world, I'm xploitoverload</h1>
-<h3 align="center">Undergraduate | EC Engineer | Hacker | Developer | CTF | Python | JavaScript | C | Java | React |<br/> - Build the universe with me</h3>
+<h3 align="center">Graduate | EC Engineer | Hacker | Developer | CTF | Python | JavaScript | C | Java | React |<br/> - Build the universe with me</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=xploitoverload&label=Profile%20views&color=FF79BC&style=flat" alt="xploitoverload" /> </p>
 
