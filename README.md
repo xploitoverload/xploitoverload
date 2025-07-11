@@ -12,9 +12,7 @@
 
 <h3 align="left">Contact me:</h3>
 <p align="left">
-<a href="https://www.linkedin.com/in/kalpesh11111/" target="blank"><img align="center" src="images/icons/Social/linked-in-alt.svg" alt="loading" height="30" width="40" /></a>
-
-<a href="https://www.instagram.com/xploitoverload?igsh=cnZ2M2hwamNtcjF1" target="blank"><img align="center" src="images/icons/Social/instagram.svg" alt="loading" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/kalpesh11111/" target="blank"><img align="center" src="images/icons/Social/linked-in-alt.svg" alt="loading" height="30" width="40" /></a> <a href="https://www.instagram.com/xploitoverload?igsh=cnZ2M2hwamNtcjF1" target="blank"><img align="center" src="images/icons/Social/instagram.svg" alt="loading" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
