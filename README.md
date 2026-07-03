@@ -11,8 +11,7 @@
 ### Hello world, build the universe with me!!!
 ![Snake](https://raw.githubusercontent.com/xploitoverload/snk/output/github-contribution-grid-snake-dark.svg?palette=github-dark)
 
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=xploitoverload&label=Profile%20views&color=FF79BC&style=flat" alt="xploitoverload" /> </p>
+<p align="centre"> <img src="https://komarev.com/ghpvc/?username=xploitoverload&label=Profile%20views&color=FF79BC&style=flat" alt="xploitoverload" /> </p>
 
 <p align="left"> <a href="https://github.com/xploitoverload/github-profile-trophy"><img src="https://trophy.cx330.in/?username=xploitoverload&theme=light" alt="xploitoverload" /></a> </p>
 
