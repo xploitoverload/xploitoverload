@@ -14,7 +14,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=xploitoverload&label=Profile%20views&color=FF79BC&style=flat" alt="xploitoverload" /> </p>
 
-<p align="left"> <a href="https://github.com/xploitoverload/github-profile-trophy"><img src="https://github-profile-trophy-fork-two.vercel.app/?username=xploitoverload&theme=light" alt="xploitoverload" /></a> </p>
+<p align="left"> <a href="https://github.com/xploitoverload/github-profile-trophy"><img src="https://trophy.cx330.in/?username=xploitoverload&theme=light" alt="xploitoverload" /></a> </p>
 
 <h3 align="left">Contact me:</h3>
 <p align="left">
