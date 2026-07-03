@@ -1,10 +1,16 @@
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&size=30&duration=4000&pause=1000&color=FF0000&center=true&vCenter=true&width=600&lines=Hack+The+Planet!" alt="Typing SVG" />
+</div>
+
+<div align="center">
+<h1 align="center">Hello world, I'm xploitoverload</h1>
+<h3 align="center">Graduate | EC Engineer | Hacker | Developer | CTF | Python | JavaScript | C | Java | React |<br/> - Build the universe with me</h3>
+  
+---
+  
 ### Hello world, build the universe with me!!!
 ![Snake](https://raw.githubusercontent.com/xploitoverload/snk/output/github-contribution-grid-snake-dark.svg?palette=github-dark)
 
-
-
-<h1 align="center">Hello world, I'm xploitoverload</h1>
-<h3 align="center">Graduate | EC Engineer | Hacker | Developer | CTF | Python | JavaScript | C | Java | React |<br/> - Build the universe with me</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=xploitoverload&label=Profile%20views&color=FF79BC&style=flat" alt="xploitoverload" /> </p>
 
@@ -12,7 +18,7 @@
 
 <h3 align="left">Contact me:</h3>
 <p align="left">
-<a href="https://www.linkedin.com/in/kalpesh11111/" target="blank"><img align="center" src="images/icons/Social/linked-in-alt.svg" alt="loading" height="30" width="40" /></a> <a href="https://www.instagram.com/xploitoverload?igsh=cnZ2M2hwamNtcjF1" target="blank"><img align="center" src="images/icons/Social/instagram.svg" alt="loading" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/kalpesh11111/" target="blank"><img align="center" src="images/icons/Social/linked-in-alt.svg" alt="loading" height="30" width="40" /></a> <a href="https://www.instagram.com/_kalpesh.solanki_" target="blank"><img align="center" src="images/icons/Social/instagram.svg" alt="loading" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
