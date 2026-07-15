@@ -11,7 +11,7 @@
 
 <!-- <div align="center"> -->
 <h1 align="center">I'm xploitoverload</h1>
-<h3 align="center">Graduate | EC Engineer | Hacker | Developer | CTF | Python | JavaScript | C | Java | React |<br/> Build the universe with me</h3>
+<h3 align="center">Graduate | EC Engineer | Hacker | Developer |<br/> Build the universe with me</h3>
   
 ---
   
