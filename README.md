@@ -16,6 +16,15 @@
 <h3 align="center">Graduate | EC Engineer | Hacker | Developer |<br/> Build the universe with me</h3>
   
 ---
+
+## 🏆 Open-Source & Linux Systems Contributions
+
+| Project | Subsystem | Contribution | Status | References |
+| :--- | :--- | :--- | :--- | :--- |
+| **Xfce Desktop** | `xfce4-screensaver` | Fixed session unlock bypass & transient X11 `BadWindow` crash (Closed Issue #204) | **MERGED 🎉** | [GitLab MR !67](https://gitlab.xfce.org/apps/xfce4-screensaver/-/merge_requests/67) • [GitHub Commit](https://github.com/xfce-mirror/xfce4-screensaver/commit/bcacc87794192c62fdc2bf5b63f6c3105f9b3eae) |
+| **Linux Kernel** | `rtw88` (Wireless) | Added HP 15s DMI quirk & watchdog auto-recovery on firmware LPS sleep failure | **In Review** | [GitHub PR #462](https://github.com/lwfinger/rtw88/pull/462) |
+
+---
   
 ### Hello world, build the universe with me!!!
 ![Snake](https://raw.githubusercontent.com/xploitoverload/snk/output/github-contribution-grid-snake-dark.svg?palette=github-dark)
