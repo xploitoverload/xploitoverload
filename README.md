@@ -17,13 +17,13 @@
   
 ---
 
-## 🏆 Open-Source & Linux Systems Contributions
+## Open-Source & Linux Systems Contributions
 
-| Project | Subsystem | Contribution | Status | References |
-| :--- | :--- | :--- | :--- | :--- |
-| **Xfce Desktop** | `xfce4-screensaver` | Fixed session unlock bypass & transient X11 `BadWindow` crash (Closed Issue #204) | **MERGED 🎉** | [GitLab MR !67](https://gitlab.xfce.org/apps/xfce4-screensaver/-/merge_requests/67) • [GitHub Commit](https://github.com/xfce-mirror/xfce4-screensaver/commit/bcacc87794192c62fdc2bf5b63f6c3105f9b3eae) • [Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/01-xfce4-screensaver-security-fix) |
-| **Linux Kernel** | `rtw88` (Wireless) | Fixed RTL8822CE firmware sleep stall; added HP 15s DMI quirk & automated watchdog recovery | **ACCEPTED 🎉 (`Acked-by: Realtek Maintainer`)** | [linux-wireless Series](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/02-rtw88-linux-kernel-wifi-fix) • [PR #462](https://github.com/lwfinger/rtw88/pull/462) • [Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/02-rtw88-linux-kernel-wifi-fix/TECHNICAL_ANALYSIS.md) |
-| **Linux Kernel** | `ieee802154` (WPAN) | Fixed unprivileged NULL pointer dereference (`0x38`) & generic Netlink system-wide deadlock | **Syzbot Verified (`OK`) & Submitted to `netdev`** | [Syzbot Bug Tracker](https://syzkaller.appspot.com/bug?extid=9ea34da5ca6100593c90) • [Lore Archive](https://lore.kernel.org/all/20261101092219.1278751-1-skalpesh942@gmail.com/) • [Analysis & QEMU Package](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/03-ieee802154-unprivileged-null-deref-fix) |
+| Project | Subsystem | Contribution | References |
+| :--- | :--- | :--- | :--- |
+| **Xfce Desktop** | `xfce4-screensaver` | Security fix for session unlock bypass & transient X11 `BadWindow` crash (Issue #204) | [GitLab MR !67](https://gitlab.xfce.org/apps/xfce4-screensaver/-/merge_requests/67) • [Commit](https://github.com/xfce-mirror/xfce4-screensaver/commit/bcacc87794192c62fdc2bf5b63f6c3105f9b3eae) • [Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/01-xfce4-screensaver-security-fix) |
+| **Linux Kernel** | `rtw88` (Wireless) | Driver fix for RTL8822CE firmware sleep stall via HP 15s DMI quirk & automated watchdog recovery | [linux-wireless Series](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/02-rtw88-linux-kernel-wifi-fix) • [PR #462](https://github.com/lwfinger/rtw88/pull/462) • [Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/02-rtw88-linux-kernel-wifi-fix/TECHNICAL_ANALYSIS.md) |
+| **Linux Kernel** | `ieee802154` (WPAN) | Kernel vulnerability fix for unprivileged NULL pointer dereference (`0x38`) & generic Netlink deadlock | [Syzbot Bug Tracker](https://syzkaller.appspot.com/bug?extid=9ea34da5ca6100593c90) • [Lore Archive](https://lore.kernel.org/all/20261101092219.1278751-1-skalpesh942@gmail.com/) • [Analysis & PoC](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/03-ieee802154-unprivileged-null-deref-fix) |
 
 > 📌 *Detailed root-cause whitepapers, standalone QEMU reproduction sandboxes, and verification logs are maintained in my [**upstream-contributions-tracker**](https://github.com/xploitoverload/upstream-contributions-tracker).*
 
