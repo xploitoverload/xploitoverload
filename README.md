@@ -52,5 +52,3 @@
 
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=xploitoverload&theme=microsoft-dark&hide_border=true&border_radius=5&locale=sa&timezone=IST&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=xploitoverload&theme=microsoft-dark&hide_border=true&border_radius=5&locale=en&timezone=IST&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
