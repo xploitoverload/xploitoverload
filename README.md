@@ -51,4 +51,8 @@
 ## <p align="center"><img width="45" height="45" src="https://user-images.githubusercontent.com/118815227/218341043-776b003e-90ac-4e00-b6bf-1888c8b7864f.gif"> 𝚂𝚝𝚊𝚝𝚜 <img width="45" height="45" src="https://user-images.githubusercontent.com/118815227/218338229-2516daef-3362-43b5-948b-ea552af00ea2.gif"></p>
 
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=xploitoverload&theme=microsoft-dark&hide_border=true&border_radius=5&locale=sa&timezone=IST&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
+<p align="center">
+  <a href="https://git.io/streak-stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com?user=xploitoverload&theme=microsoft-dark&hide_border=true&border_radius=5&locale=en&timezone=Asia%2FKolkata&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
+  </a>
+</p>
