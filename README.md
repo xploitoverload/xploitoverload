@@ -12,8 +12,8 @@
 <img align="centre" src="images/file_000000002fcc8208a2ea8a866fe8eaba.png" />
 
 <!-- <div align="center"> -->
-<h1 align="center">I'm Kalpesh Solanki (xploitoverload)</h1>
-<h3 align="center">Linux Kernel & Systems Security Engineer | Operating in Ring 0<br/>Kernel Concurrency • Device Drivers • Networking Stacks • Vulnerability Research</h3>
+<h1 align="center">I'm xploitoverload</h1>
+<h3 align="center">Cyber Security Researcher | Hacker | Red Teamer | CTFer | Developer | EC Engineer |<br/> Operating in Ring 0 • Linux Kernel Security • Build the universe with me</h3>
   
 ---
 

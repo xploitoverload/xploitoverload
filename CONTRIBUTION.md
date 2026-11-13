@@ -1,6 +1,7 @@
 # 🛡️ Linux Kernel & Upstream Systems Contributions
 
 **Author:** Kalpesh Solanki ([@xploitoverload](https://github.com/xploitoverload))  
+**Identity:** Cyber Security Researcher | Hacker | Red Teamer | CTFer | Linux Kernel & Ring 0 Security Researcher  
 **Focus:** Ring 0 Linux Kernel Engineering, Subsystem Concurrency & Race Conditions, Device Drivers, Virtual Networking, Hardware Quirks, Systems Security Research  
 **Mailing Lists:** `linux-kernel@vger.kernel.org`, `netdev@vger.kernel.org`, `linux-wireless@vger.kernel.org`
 
