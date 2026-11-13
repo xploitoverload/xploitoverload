@@ -12,7 +12,7 @@
 <img align="centre" src="images/file_000000002fcc8208a2ea8a866fe8eaba.png" />
 
 <!-- <div align="center"> -->
-<h1 align="center">I'm xploitoverload</h1>
+<h1 align="center">I'm Kalpesh Solanki (xploitoverload)</h1>
 <h3 align="center">Cyber Security Researcher | Hacker | Red Teamer | CTFer | Developer | EC Engineer |<br/> Operating in Ring 0 • Linux Kernel Security • Build the universe with me</h3>
   
 ---
@@ -22,16 +22,39 @@
 > 🌟 **[👉 Click here to read the complete technical breakdown & maintainer endorsements in CONTRIBUTIONS.md](CONTRIBUTIONS.md)**  
 > 🧠 **[👉 Click here to read the Ring 0 Systems & Kernel Interview Playbook](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/INTERVIEW_PREP_RING0.md)**
 
-| Subsystem / Project | Description | Maintainers & Reviewers | Upstream Status | Artifacts & References |
-| :--- | :--- | :--- | :--- | :--- |
-| **Linux Kernel**<br>`drivers/net/tun`<br>`net/ieee802154` | **Unprivileged Supervisor NULL Dereference & Deadlock Fix**<br>Disallows setting `ARPHRD_IEEE802154` / `6LOWPAN` link types on TUN devices, eliminating unprivileged supervisor kernel panics. | **Jakub Kicinski** (`kuba@kernel.org`)<br>**Willem de Bruijn** (`willemb@google.com`) | **MERGED UPSTREAM 🎉**<br>(`netdev/net.git`) | **Commit:** [`968f2b94a596`](https://git.kernel.org/netdev/net/c/968f2b94a596)<br>**Syzbot:** [`9ea34da5ca6100593c90`](https://syzkaller.appspot.com/bug?extid=9ea34da5ca6100593c90)<br>[Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/03-ieee802154-unprivileged-null-deref-fix) |
-| **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **HP Laptop 15s-fr5xxx PCIe ASPM & Deep LPS Quirk**<br>Resolves microcontroller PCIe link desynchronization causing complete Wi-Fi lockup on RTL8822CE. | **Ping-Ke Shih** (`pkshih@realtek.com`) | **MERGED UPSTREAM 🎉**<br>(`pkshih/rtw-next`) | **Commit:** [`04c99841872`](https://git.kernel.org/pub/scm/linux/kernel/git/pkshih/rtw.git/commit/?id=04c9984187228904f222681661c50db3f0c50b71)<br>[Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/02-rtw88-linux-kernel-wifi-fix/TECHNICAL_ANALYSIS.md) |
-| **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **3-Patch Firmware Recovery & Concurrency Series (v6)**<br>• Fixes `RTW_FLAG_RESTARTING` permanent stall on start/stop.<br>• Resolves UAF, double free & NULL deref race in `rtw_sta_remove()`.<br>• 3-consecutive LPS hang threshold on PCIe gated by `FW_FEATURE_LPS_C2H`. | **Luka Gejak** (`luka.gejak@linux.dev`)<br>**Ping-Ke Shih** (`pkshih@realtek.com`)<br>**Zong-Zhe Yang** (`kevin_yang@realtek.com`) | **100% FORMALLY APPROVED 🚀**<br>(`Reviewed-by: Luka Gejak` on all 3; vetted by Realtek; queued for `rtw-next`) | [**Lore Archive (v6)**](https://lore.kernel.org/linux-wireless/20261113034704.21283-1-skalpesh942@gmail.com/)<br>[**Patchwork**](https://patchwork.kernel.org/project/linux-wireless/list/?submitter=Kalpesh+Solanki)<br>[Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/02-rtw88-linux-kernel-wifi-fix) |
-| **Linux Kernel**<br>`drivers/net/bonding` | **IEEE 802.15.4 & 6LoWPAN Device Enslavement Guard**<br>Prevents kernel NULL pointer dereference and buffer corruption caused by enslaving non-Ethernet devices in `bond_enslave()`. | **Oliver Hartkopp** (`socketcan@hartkopp.net`)<br>**Jay Vosburgh** (`jv@jvosburgh.net`) | **FORMALLY APPROVED 🚀**<br>(`Reviewed-by: Oliver Hartkopp`; queued for merge) | [**Lore Archive**](https://lore.kernel.org/netdev/20261108143224.489110-1-skalpesh942@gmail.com/) |
-| **Linux Kernel**<br>`drivers/net/tun`<br>`net/mctp` | **Unprivileged DoS via SKB Control Block Panic Fix**<br>Disallows `ARPHRD_MCTP` link type configuration via `TUNSETLINK`, preventing unprivileged users from triggering `panic_on_warn`. | **Willem de Bruijn** (`willemb@google.com`)<br>**Jeremy Kerr** (`jk@ozlabs.org`) | **Under Active Review** | [**Lore Archive**](https://lore.kernel.org/netdev/20261108143431.489150-1-skalpesh942@gmail.com/) |
-| **Xfce Desktop**<br>`xfce4-screensaver` | **Session Unlock Security Bypass & X11 `BadWindow` Crash**<br>Fixes authentication prompt timeout race condition where an unhandled X11 protocol error crashed the screensaver daemon, unlocking the session without credentials. | **Gaël Bonithon** (`@Tamaranch`) | **MERGED UPSTREAM 🎉**<br>(Merged in release 4.20.3) | [**GitLab MR !67**](https://gitlab.xfce.org/apps/xfce4-screensaver/-/merge_requests/67)<br>[**Commit**](https://github.com/xfce-mirror/xfce4-screensaver/commit/bcacc87794192c62fdc2bf5b63f6c3105f9b3eae)<br>[Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/01-xfce4-screensaver-security-fix) |
+| Subsystem / Project | Technical Impact & Vulnerability Architecture | Senior Maintainers & Reviewers | Artifacts & Proof |
+| :--- | :--- | :--- | :--- |
+| **Linux Kernel**<br>Core Networking (`netdev`)<br>`drivers/net/tun` & `net/ieee802154` | **Unprivileged Supervisor NULL Dereference & Mutex Deadlock Fix**<br>Prevented container/namespace `CAP_NET_ADMIN` users from triggering supervisor crashes and `rtnl_lock` deadlocks via `TUNSETLINK` link type tampering. | **Jakub Kicinski** (`kuba@kernel.org`)<br>**Willem de Bruijn** (`willemb@google.com`) | **Commit:** [`968f2b94a596`](https://git.kernel.org/netdev/net/c/968f2b94a596)<br>**Syzbot:** [`9ea34da5ca6100593c90`](https://syzkaller.appspot.com/bug?extid=9ea34da5ca6100593c90)<br>[Whitepaper & Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/03-ieee802154-unprivileged-null-deref-fix) |
+| **Linux Kernel**<br>Wireless Driver (`rtw88`)<br>`drivers/net/wireless/realtek/rtw88` | **HP Laptop 15s-fr5xxx PCIe ASPM L1/L1.2 & Deep LPS DMI Quirk**<br>Resolved microcontroller link desynchronization causing complete Wi-Fi lockup on RTL8822CE upon idling. | **Ping-Ke Shih** (`pkshih@realtek.com`) | **Commit:** [`04c99841872`](https://git.kernel.org/pub/scm/linux/kernel/git/pkshih/rtw.git/commit/?id=04c9984187228904f222681661c50db3f0c50b71)<br>[Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/02-rtw88-linux-kernel-wifi-fix/TECHNICAL_ANALYSIS.md) |
+| **Linux Kernel**<br>Wireless Stack (`mac80211` / `rtw88`) | **Firmware Recovery & State Machine Concurrency Series**<br>• Fixed permanent deadlock of `RTW_FLAG_RESTARTING` on teardown.<br>• Eliminated UAF, double-free, and NULL dereference races in `rtw_sta_remove()`.<br>• Introduced 3-timeout consecutive LPS hang threshold on PCIe gated by `FW_FEATURE_LPS_C2H`. | **Luka Gejak** (`luka.gejak@linux.dev`)<br>**Ping-Ke Shih** (`pkshih@realtek.com`)<br>**Zong-Zhe Yang** (`kevin_yang@realtek.com`) | [**Lore Archive (v6)**](https://lore.kernel.org/linux-wireless/20261113034704.21283-1-skalpesh942@gmail.com/)<br>[**Patchwork**](https://patchwork.kernel.org/project/linux-wireless/list/?submitter=Kalpesh+Solanki)<br>[Analysis & Patches](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/02-rtw88-linux-kernel-wifi-fix) |
+| **Linux Kernel**<br>Link Aggregation (`bonding`)<br>`drivers/net/bonding` | **IEEE 802.15.4 & 6LoWPAN Device Enslavement Guard**<br>Enforced link-layer encapsulation invariants in `bond_enslave()`, preventing kernel memory corruption and invalid hardware address dereferences. | **Oliver Hartkopp** (`socketcan@hartkopp.net`)<br>**Jay Vosburgh** (`jv@jvosburgh.net`) | [**Lore Archive**](https://lore.kernel.org/netdev/20261108143224.489110-1-skalpesh942@gmail.com/) |
+| **Linux Kernel**<br>Core Networking (`tun` / `mctp`) | **Unprivileged DoS via SKB Control Block Panic Fix**<br>Disallowed `ARPHRD_MCTP` link type configuration via `TUNSETLINK`, preventing unprivileged users from triggering `panic_on_warn` local system crash. | **Willem de Bruijn** (`willemb@google.com`)<br>**Jeremy Kerr** (`jk@ozlabs.org`) | [**Lore Archive**](https://lore.kernel.org/netdev/20261108143431.489150-1-skalpesh942@gmail.com/) |
+| **Xfce Desktop**<br>Desktop Security<br>`xfce4-screensaver` | **Session Unlock Security Bypass & X11 `BadWindow` Crash**<br>Fixed authentication prompt timeout race condition where an unhandled X11 protocol error crashed the screensaver daemon, unlocking the session without credentials. | **Gaël Bonithon** (`@Tamaranch`) | [**GitLab MR !67**](https://gitlab.xfce.org/apps/xfce4-screensaver/-/merge_requests/67)<br>[**Commit**](https://github.com/xfce-mirror/xfce4-screensaver/commit/bcacc87794192c62fdc2bf5b63f6c3105f9b3eae)<br>[Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/01-xfce4-screensaver-security-fix) |
 
 > 📌 *Detailed root-cause whitepapers, standalone QEMU reproduction sandboxes, and verification logs are maintained in my [**upstream-contributions-tracker**](https://github.com/xploitoverload/upstream-contributions-tracker).*
+
+---
+
+## 🔬 Ring 0 & Linux Systems Architecture Arsenal
+
+```
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                LINUX KERNEL & RING 0 DOMAIN EXPERTISE                                ║
+╠══════════════════════════╦════════════════════════════════════════════════════════════════════════════╣
+║ Subsystems               ║ netdev, mac80211, cfg80211, rtw88, bonding, tun/tap, ieee802154, mctp       ║
+║ Concurrency & Locking    ║ Spinlocks (irqsave), Mutexes, RCU, Lockdep, Memory Barriers, Workqueues    ║
+║ Execution Contexts       ║ Atomic Context vs Process Context, Top-Half HardIRQs, Bottom-Half SoftIRQs ║
+║ Memory & Hardware        ║ SLUB Allocator, GFP Flags (ATOMIC/KERNEL), DMA Coherency, MMIO, PCIe ASPM ║
+║ Kernel Triage & Tooling  ║ QEMU/KVM + GDB, ftrace, bpftrace, dyndbg, KASAN, UBSAN, Syzbot Repro Triage ║
+║ Security & Exploitation  ║ User Namespaces (CLONE_NEWUSER), ioctl Auditing, Race Exploits, eBPF       ║
+╚══════════════════════════╩════════════════════════════════════════════════════════════════════════════╝
+```
+
+### ⚙️ Core Technical Capabilities
+* **Kernel Concurrency & Race Condition Elimination:** Designing lockless and synchronized teardown flows across interrupt bottom-halves, asynchronous workqueues (`cancel_work_sync`), and state machines to eliminate Use-After-Free (UAF) and deadlocks.
+* **Privilege Boundary & Container Attack Surface Auditing:** Identifying and neutralizing privilege escalation primitives accessible to unprivileged namespaces via virtual device ioctls (`TUNSETLINK`).
+* **Hardware-Driver Interfacing & Microcontroller Firmware Quirks:** Decoding PCIe low-power states (ASPM L1/L1.2, Deep LPS), ACPI/DMI tables, and register polling state machines to recover frozen Wi-Fi hardware without host kernel panics.
+* **Kernel Root-Cause Analysis Without GUI:** Rapid triage from serial netconsole logs, crash dumps, and Syzbot reproducers using GDB over QEMU/KVM, dynamic debugging (`dyndbg`), and sanitizers (`KASAN`, `Lockdep`).
 
 ---
   
@@ -48,14 +71,21 @@
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="images/icons/ProgrammingLanguages/c.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="images/icons/FrontendDevelopment/css.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> </p>
-
-<!-- <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=xploitoverload&show_icons=true&locale=en&layout=compact" alt="xploitoverload" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=xploitoverload&show_icons=true&locale=en" alt="xploitoverload" /></p> -->
+<p align="left"> 
+  <a href="https://www.kernel.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> 
+  <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" rel="noreferrer"> <img src="images/icons/ProgrammingLanguages/c.svg" alt="c" width="40" height="40"/> </a> 
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
+  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/> </a> 
+  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
+  <a href="https://www.sourceware.org/gdb/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gdb/gdb-original.svg" alt="gdb" width="40" height="40"/> </a> 
+  <a href="https://www.qemu.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/qemu/qemu-original.svg" alt="qemu" width="40" height="40"/> </a> 
+  <a href="https://www.wireshark.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wireshark/wireshark-original.svg" alt="wireshark" width="40" height="40"/> </a> 
+  <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
+</p>
 
 ## <p align="center"><img width="45" height="45" src="https://user-images.githubusercontent.com/118815227/218341043-776b003e-90ac-4e00-b6bf-1888c8b7864f.gif"> 𝚂𝚝𝚊𝚝𝚜 <img width="45" height="45" src="https://user-images.githubusercontent.com/118815227/218338229-2516daef-3362-43b5-948b-ea552af00ea2.gif"></p>
-
 
 <p align="center">
   <a href="https://git.io/streak-stats">
