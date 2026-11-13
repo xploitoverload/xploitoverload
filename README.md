@@ -39,13 +39,13 @@
 
 ```
 ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════╗
-║                                LINUX KERNEL & RING 0 DOMAIN EXPERTISE                                ║
+║                                LINUX KERNEL & RING 0 DOMAIN EXPERTISE                                 ║
 ╠══════════════════════════╦════════════════════════════════════════════════════════════════════════════╣
-║ Subsystems               ║ netdev, mac80211, cfg80211, rtw88, bonding, tun/tap, ieee802154, mctp       ║
+║ Subsystems               ║ netdev, mac80211, cfg80211, rtw88, bonding, tun/tap, ieee802154, mctp      ║
 ║ Concurrency & Locking    ║ Spinlocks (irqsave), Mutexes, RCU, Lockdep, Memory Barriers, Workqueues    ║
 ║ Execution Contexts       ║ Atomic Context vs Process Context, Top-Half HardIRQs, Bottom-Half SoftIRQs ║
-║ Memory & Hardware        ║ SLUB Allocator, GFP Flags (ATOMIC/KERNEL), DMA Coherency, MMIO, PCIe ASPM ║
-║ Kernel Triage & Tooling  ║ QEMU/KVM + GDB, ftrace, bpftrace, dyndbg, KASAN, UBSAN, Syzbot Repro Triage ║
+║ Memory & Hardware        ║ SLUB Allocator, GFP Flags (ATOMIC/KERNEL), DMA Coherency, MMIO, PCIe ASPM  ║
+║ Kernel Triage & Tooling  ║ QEMU/KVM + GDB, ftrace, bpftrace, dyndbg, KASAN, UBSAN, Syzbot Repro Triage║
 ║ Security & Exploitation  ║ User Namespaces (CLONE_NEWUSER), ioctl Auditing, Race Exploits, eBPF       ║
 ╚══════════════════════════╩════════════════════════════════════════════════════════════════════════════╝
 ```
