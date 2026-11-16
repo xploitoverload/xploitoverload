@@ -130,7 +130,7 @@ Two additional vulnerability and correctness fixes discovered during local code 
 
 ---
 
-## // 0x05: OPERATOR KERNEL PATCH DISPATCH PROTOCOLS
+## // 0x05: KERNEL PATCH DISPATCH PROTOCOLS
 
 When submitting patches or collaborating alongside this work, the following strict kernel guidelines apply:
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:990000,100:e50914&height=250&section=header&text=Kalpesh%20Solanki%20%7C%20CX330&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=The%20Star%20%7C%20Ring%200%20Kernel%20Security%20%7C%20Exploit%20Dev%20%7C%20Red%20Team%20Operator&descSize=18&descAlignY=55&descAlign=50"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:990000,100:e50914&height=250&section=header&text=Kalpesh%20Solanki%20%7C%20CX330&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=The%20Star%20%7C%20Ring%200%20Kernel%20Security%20%7C%20Exploit%20Dev%20%7C%20Red%20Teamer&descSize=18&descAlignY=55&descAlign=50"/>
 
 <br/>
 
@@ -50,7 +50,7 @@
 <br/>
 
 ```c
-/* Ring 0 Linux Kernel Security Researcher & Red Team Operator */
+/* Ring 0 Linux Kernel Security Researcher & Red Teamer */
 static const struct security_researcher kalpesh = {
     .handle        = "xploitoverload",
     .alias         = "CX330 (The Star)",
