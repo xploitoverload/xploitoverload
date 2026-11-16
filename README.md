@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:990000,100:e50914&height=250&section=header&text=Kalpesh%20Solanki&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Linux%20Kernel%20Security%20%7C%20Ring%200%20Researcher%20%7C%20Exploit%20Hunter&descSize=18&descAlignY=55&descAlign=50"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:990000,100:e50914&height=250&section=header&text=Kalpesh%20Solanki&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Linux%20Kernel%20Security%20%7C%20Ring%200%20Researcher%20%7C%20Advanced%20Red%20Teamer&descSize=18&descAlignY=55&descAlign=50"/>
 
 <br/>
 
@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=650&lines=Operating+in+Ring+0+Supervisor+Mode;Linux+Kernel+Security+%26+Vulnerability+Research;Kernel+CNA+CVE-2026-97601;Audit+the+seams.+Hunt+the+races.+Hack+The+Planet!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=700&lines=Operating+in+Ring+0+Supervisor+Mode;Advanced+Red+Teaming+%26+AD+Domination;Linux+Kernel+Security+%26+Vulnerability+Research;EDR%2FAV+Evasion+%26+Exploit+Development;Kernel+CNA+CVE-2026-97601;Hack+The+Planet!" alt="Typing SVG" />
 </p>
 
 </div>
@@ -33,15 +33,16 @@
 <h2><font color="#e50914" size="6">#</font> Kernel Identity & Architecture</h2>
 
 ```c
-/* Ring 0 Linux Kernel Security Researcher */
+/* Ring 0 Linux Kernel Security Researcher & Advanced Red Teamer */
 static const struct security_researcher kalpesh = {
     .handle        = "xploitoverload",
     .real_name     = "Kalpesh Solanki",
     .privilege     = RING_0_SUPERVISOR,
-    .subsystems    = { "netdev", "rtw88", "bonding", "tun/tap", "ieee802154", "mctp" },
+    .roles         = { "Linux Kernel Security", "Advanced Red Teaming", "Exploit Development", "Vulnerability Research" },
     .cve_track     = { "CVE-2026-97601", "8 Upstream Kernel Contributions" },
-    .arsenal       = { "Concurrency Exploits", "UAF/Race Elimination", "Device Drivers", "QEMU/GDB" },
-    .philosophy    = "Audit the seams. Dissect the protocol. Hack the planet."
+    .subsystems    = { "netdev", "rtw88", "bonding", "tun/tap", "ieee802154", "mctp" },
+    .offensive_kit = { "BloodHound", "Impacket", "Havoc/Sliver", "Ligolo-ng", "Hell's Gate", "Ghidra/GDB" },
+    .philosophy    = "Audit the seams. Hunt the races. Dominate the domain. Hack the planet."
 };
 ```
 
@@ -77,6 +78,23 @@ static const struct security_researcher kalpesh = {
 ```
 
 > 📌 *Detailed root-cause whitepapers, standalone QEMU reproduction sandboxes, and verification logs are maintained in my [**upstream-contributions-tracker**](https://github.com/xploitoverload/upstream-contributions-tracker).*
+
+<br/>
+
+<h2><font color="#e50914" size="6">#</font> Red Teaming & Advanced Offensive Operations</h2>
+
+<div align="center">
+
+| Domain | Tactical Specialization & Methodologies | Offensive Tooling & Arsenal |
+| :--- | :--- | :--- |
+| **Active Directory & Identity** | Kerberos exploitation, AD CS abuse, DACL/ACE abuse, Domain Dominance, Token impersonation, Coerced authentication | `BloodHound`, `Impacket`, `Mimikatz`, `Rubeus`, `Certipy`, `PKINITtools`, `NetExec`, `Responder` |
+| **C2 & Adversary Emulation** | Command & control infrastructure, covert lateral movement, resilient egress channels, multi-stage beaconing | `Cobalt Strike`, `Havoc C2`, `Sliver`, `Mythic`, `Evil-WinRM`, `WMIExec`, `DCOM` |
+| **EDR / AV Evasion & Malware Dev** | User-mode API unhooking, direct & indirect syscalls, memory scanner evasion, shellcode staging, AMSI & ETW patching | `Hell's / Halo's Gate`, `TartarusGate`, `Process Hollowing`, `APC Queue Injection`, `Custom Shellcode Loaders` |
+| **Network Pivoting & Infiltration** | Multi-hop internal routing, traffic encapsulation, covert exfiltration, socks proxying | `Ligolo-ng`, `Chisel`, `Proxychains-ng`, `FRP`, `Socat`, `WireGuard Tunnels` |
+| **Binary Exploitation & Reversing** | Ring 0/Ring 3 vulnerability research, ROP chain creation, kernel heap spray, disassembly & decompilation | `Ghidra`, `IDA Pro`, `Binary Ninja`, `GDB + GEF/Pwndbg`, `Radare2`, `ROPgadget` |
+| **Privilege Escalation (LPE)** | Linux kernel exploitation (UAF, race conditions, dirty-pipe/cow), Windows token manipulation & service hijacking | `CVE-2023-0386`, `Dirty Pipe`, `JuicyPotatoNG`, `GodPotato`, `LinPEAS / WinPEAS` |
+
+</div>
 
 <br/>
 
