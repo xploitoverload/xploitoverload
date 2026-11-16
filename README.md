@@ -22,6 +22,12 @@
   </a>
 </p>
 
+# <p align="center"> [𝓗𝓮𝓵𝓵𝓸 ^_^](#-%F0%9D%93%97%F0%9D%93%AE%F0%9D%93%B5%F0%9D%93%B5%F0%9D%93%B8-_-) <img width="45" height="45" src="https://user-images.githubusercontent.com/118815227/218338072-ea477aa8-1374-4e2d-8dfd-dd8cc4e45656.gif"></p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/118815227/218338455-6034502f-e9dd-42e8-ba74-608fb41cdbaa.gif"> <code>𝚝𝚘 𝚖𝚢 𝙶𝚒𝚝𝙷𝚞𝚋 𝚙𝚛𝚘𝚏𝚒𝚕𝚎</code>
+</p>
+
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=700&lines=Operating+in+Ring+0+Supervisor+Mode;Advanced+Red+Teaming+%26+AD+Domination;Linux+Kernel+Security+%26+Vulnerability+Research;EDR%2FAV+Evasion+%26+Exploit+Development;Kernel+CNA+CVE-2026-97601;Hack+The+Planet!" alt="Typing SVG" />
 </p>
@@ -30,7 +36,17 @@
 
 <br/>
 
-<h2><font color="#e50914" size="6">#</font> Kernel Identity & Architecture</h2>
+<h2>
+  <font color="#e50914" size="6">#</font> 
+  A̵̺̼̠̫͚͙͎͇͛̈́͑̌b̸̛̮̗̺͉̰̃͌́̏̑̇͋͝͝ò̴̡̪͖̻̱̫͇̪̍͘ų̵͚͙͉̳̱̯̳̩͚͑̋̌̂͛̽̍̌̒̕ẗ̵͖͔̳̜̬̝̝͉̪ ̸̻̦̣͓̪͉̳͖̜̺̉̔̓͌͂͌͛̎́ṃ̷̏̾̓ē̸͇͖̳̲͆̽̾̎̈́̊ 
+  <img src="images/mooshi.gif" width="35"/>
+</h2>
+
+<div align="center">
+  <img src="images/file_000000002fcc8208a2ea8a866fe8eaba.png" style="border-radius: 8px; max-width: 100%;" />
+</div>
+
+<br/>
 
 ```c
 /* Ring 0 Linux Kernel Security Researcher & Advanced Red Teamer */
@@ -146,7 +162,12 @@ static const struct security_researcher kalpesh = {
 
 <br/>
 
-<h2><font color="#e50914" size="6">#</font> Open Source Analytics & Metrics</h2>
+<h2>
+  <font color="#e50914" size="6">#</font> 
+  <img width="35" height="35" src="https://user-images.githubusercontent.com/118815227/218341043-776b003e-90ac-4e00-b6bf-1888c8b7864f.gif"> 
+  Open Source Analytics & 𝚂𝚝𝚊𝚝𝚜 
+  <img width="35" height="35" src="https://user-images.githubusercontent.com/118815227/218338229-2516daef-3362-43b5-948b-ea552af00ea2.gif">
+</h2>
 
 <div align="center">
 
