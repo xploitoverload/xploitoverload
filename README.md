@@ -17,19 +17,34 @@
   
 ---
 
-## 🛡️ Upstream Linux Kernel & Systems Contributions
+## 🛡️ Upstream Linux Kernel & Systems Security Contributions
 
-> 🌟 **[👉 Click here to read the complete technical breakdown & maintainer endorsements in CONTRIBUTIONS.md](CONTRIBUTIONS.md)**  
-> 🧠 **[👉 Click here to read the Ring 0 Systems & Kernel Interview Playbook](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/INTERVIEW_PREP_RING0.md)**
+<div align="center">
 
-| Subsystem / Project | Technical Impact & Vulnerability Architecture | Senior Maintainers & Reviewers | Artifacts & Proof |
-| :--- | :--- | :--- | :--- |
-| **Linux Kernel**<br>Core Networking (`netdev`)<br>`drivers/net/tun` & `net/ieee802154` | **Unprivileged Supervisor NULL Dereference & Mutex Deadlock Fix**<br>Prevented container/namespace `CAP_NET_ADMIN` users from triggering supervisor crashes and `rtnl_lock` deadlocks via `TUNSETLINK` link type tampering. | **Jakub Kicinski** (`kuba@kernel.org`)<br>**Willem de Bruijn** (`willemb@google.com`) | **Commit:** [`968f2b94a596`](https://git.kernel.org/netdev/net/c/968f2b94a596)<br>**Syzbot:** [`9ea34da5ca6100593c90`](https://syzkaller.appspot.com/bug?extid=9ea34da5ca6100593c90)<br>[Whitepaper & Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/03-ieee802154-unprivileged-null-deref-fix) |
-| **Linux Kernel**<br>Wireless Driver (`rtw88`)<br>`drivers/net/wireless/realtek/rtw88` | **HP Laptop 15s-fr5xxx PCIe ASPM L1/L1.2 & Deep LPS DMI Quirk**<br>Resolved microcontroller link desynchronization causing complete Wi-Fi lockup on RTL8822CE upon idling. | **Ping-Ke Shih** (`pkshih@realtek.com`) | **Commit:** [`04c99841872`](https://git.kernel.org/pub/scm/linux/kernel/git/pkshih/rtw.git/commit/?id=04c9984187228904f222681661c50db3f0c50b71)<br>[Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/02-rtw88-linux-kernel-wifi-fix/TECHNICAL_ANALYSIS.md) |
-| **Linux Kernel**<br>Wireless Stack (`mac80211` / `rtw88`) | **Firmware Recovery & State Machine Concurrency Series**<br>• Fixed permanent deadlock of `RTW_FLAG_RESTARTING` on teardown.<br>• Eliminated UAF, double-free, and NULL dereference races in `rtw_sta_remove()`.<br>• Introduced 3-timeout consecutive LPS hang threshold on PCIe gated by `FW_FEATURE_LPS_C2H`. | **Luka Gejak** (`luka.gejak@linux.dev`)<br>**Ping-Ke Shih** (`pkshih@realtek.com`)<br>**Zong-Zhe Yang** (`kevin_yang@realtek.com`) | [**Lore Archive (v6)**](https://lore.kernel.org/linux-wireless/20261113034704.21283-1-skalpesh942@gmail.com/)<br>[**Patchwork**](https://patchwork.kernel.org/project/linux-wireless/list/?submitter=Kalpesh+Solanki)<br>[Analysis & Patches](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/02-rtw88-linux-kernel-wifi-fix) |
-| **Linux Kernel**<br>Link Aggregation (`bonding`)<br>`drivers/net/bonding` | **IEEE 802.15.4 & 6LoWPAN Device Enslavement Guard**<br>Enforced link-layer encapsulation invariants in `bond_enslave()`, preventing kernel memory corruption and invalid hardware address dereferences. | **Oliver Hartkopp** (`socketcan@hartkopp.net`)<br>**Jay Vosburgh** (`jv@jvosburgh.net`) | [**Lore Archive**](https://lore.kernel.org/netdev/20261108143224.489110-1-skalpesh942@gmail.com/) |
-| **Linux Kernel**<br>Core Networking (`tun` / `mctp`) | **Unprivileged DoS via SKB Control Block Panic Fix**<br>Disallowed `ARPHRD_MCTP` link type configuration via `TUNSETLINK`, preventing unprivileged users from triggering `panic_on_warn` local system crash. | **Willem de Bruijn** (`willemb@google.com`)<br>**Jeremy Kerr** (`jk@ozlabs.org`) | [**Lore Archive**](https://lore.kernel.org/netdev/20261108143431.489150-1-skalpesh942@gmail.com/) |
-| **Xfce Desktop**<br>Desktop Security<br>`xfce4-screensaver` | **Session Unlock Security Bypass & X11 `BadWindow` Crash**<br>Fixed authentication prompt timeout race condition where an unhandled X11 protocol error crashed the screensaver daemon, unlocking the session without credentials. | **Gaël Bonithon** (`@Tamaranch`) | [**GitLab MR !67**](https://gitlab.xfce.org/apps/xfce4-screensaver/-/merge_requests/67)<br>[**Commit**](https://github.com/xfce-mirror/xfce4-screensaver/commit/bcacc87794192c62fdc2bf5b63f6c3105f9b3eae)<br>[Analysis](https://github.com/xploitoverload/upstream-contributions-tracker/tree/main/01-xfce4-screensaver-security-fix) |
+[![Linux Kernel](https://img.shields.io/badge/Linux_Kernel-Mainline_&_Netdev-blue?logo=linux&logoColor=white)](https://git.kernel.org)
+[![CVE-2026-97601](https://img.shields.io/badge/CVE-2026--97601-red?logo=security)](https://git.kernel.org/netdev/net/c/968f2b94a596)
+[![Upstream Tracker](https://img.shields.io/badge/Upstream_Tracker-8_Contributions-success?logo=github)](https://github.com/xploitoverload/upstream-contributions-tracker)
+[![Contributing Portfolio](https://img.shields.io/badge/Full_Portfolio-CONTRIBUTING.md-orange?logo=git)](CONTRIBUTING.md)
+
+</div>
+
+> 🌟 **[👉 Click here to explore the full Upstream Contributions Portfolio & Technical Case Studies in CONTRIBUTING.md](CONTRIBUTING.md)**  
+> 📋 *Or click the **Contributing** tab in the repository navigation bar to view full patch breakdowns, senior maintainer endorsements, and vulnerability analyses.*  
+> 🧠 **[👉 Read the Ring 0 Systems & Kernel Interview Playbook](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/INTERVIEW_PREP_RING0.md)**
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        UPSTREAM LINUX KERNEL & SYSTEMS TRACK RECORD                    │
+├───────────────────┬─────────────────────────────────────────────────┬──────────────────┤
+│ Category          │ Scope & Subsystems                              │ Status           │
+├───────────────────┼─────────────────────────────────────────────────┼──────────────────┤
+│ Kernel Security   │ netdev, tun, ieee802154 (CVE-2026-97601)        │ MERGED 🎉        │
+│ Wireless Drivers  │ rtw88 (PCIe ASPM DMI Quirk & Recovery Series)   │ COMMITTED / APPR │
+│ Core Networking   │ drivers/net/bonding (Link Invariant Guard v2)   │ FORMALLY APPR 🚀 │
+│ Protocol Hardening│ drivers/net/tun & net/mctp (SKB Panic On Warn)  │ ACTIVE REVIEW    │
+│ Desktop Security  │ xfce4-screensaver (Unlock Bypass & BadWindow)   │ MERGED 🎉        │
+└───────────────────┴─────────────────────────────────────────────────┴──────────────────┘
+```
 
 > 📌 *Detailed root-cause whitepapers, standalone QEMU reproduction sandboxes, and verification logs are maintained in my [**upstream-contributions-tracker**](https://github.com/xploitoverload/upstream-contributions-tracker).*
 
