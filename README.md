@@ -77,7 +77,7 @@ static const struct security_researcher kalpesh = {
 | Track | Focus Areas & Technical Deep Dives | Weaponized Artifacts & References |
 | :--- | :--- | :--- |
 | **[0x01] Binary Exploitation & Pwn** | Stack buffer overflows on Linux x86, format string exploits, ROP chain synthesis, shellcoding | `THM Pwn101`, `HTB Stack Overflows`, `PicoCTF Pwn Series (Pwn106)` |
-| **[0x02] Applied Cryptanalysis & Math** | Chinese Remainder Theorem (CRT), Fermat's Little Theorem, Extended Euclidean Algorithm, Discrete Math | `密碼學任督二脈`, `Modular Arithmetic Inverses`, `RSA & Stream Ciphers` |
+| **[0x02] Applied Cryptanalysis & Math** | Modular Arithmetic Inverses, Fermat's Little Theorem, Extended Euclidean Algorithm, Discrete Math | `Cryptography for Muggles`, `Modular Arithmetic Inverses`, `RSA & Stream Ciphers` |
 | **[0x03] Low-Level Systems & Hardware**| CPU registers, x86/ARM stack frames, calling conventions, Byte Code vs Assembly vs Machine Code | `CPU Register Internals`, `Kernel MMIO`, `Disassembly Walkthroughs` |
 | **[0x04] Weaponized Injections & Web**  | Advanced SQLMap automation, automated fuzzing heuristics, UAPI boundary inspection | `SQLMap Weaponized Spellbook`, `Automated Injection Protocols` |
 | **[0x05] CTF & HTB Machine Root Vault**| Full machine intrusion, cryptographic challenge breakdowns, local privilege escalation | `BabyEncryption`, `Time Capsule`, `Insomnia`, `Locked Away`, `Racecar` |
