@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:990000,100:e50914&height=250&section=header&text=Kalpesh%20Solanki&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Linux%20Kernel%20Security%20%7C%20Ring%200%20Researcher%20%7C%20Advanced%20Red%20Teamer&descSize=18&descAlignY=55&descAlign=50"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:990000,100:e50914&height=250&section=header&text=Kalpesh%20Solanki%20%7C%20CX330&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=The%20Star%20%7C%20Ring%200%20Kernel%20Security%20%7C%20Exploit%20Hunter%20%7C%20Red%20Teamer&descSize=18&descAlignY=55&descAlign=50"/>
 
 <br/>
 
@@ -17,6 +17,9 @@
   <a href="mailto:skalpesh942@gmail.com">
     <img src="https://img.shields.io/badge/Email-skalpesh942@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
+  <a href="https://leetcode.com/xploitoverload/">
+    <img src="https://img.shields.io/badge/LeetCode-xploitoverload-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/>
+  </a>
   <a href="https://github.com/xploitoverload/upstream-contributions-tracker">
     <img src="https://img.shields.io/badge/Upstream_Tracker-8_Patches-E50914?style=for-the-badge&logo=git&logoColor=white" alt="Upstream Tracker"/>
   </a>
@@ -29,7 +32,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=700&lines=Operating+in+Ring+0+Supervisor+Mode;Advanced+Red+Teaming+%26+AD+Domination;Linux+Kernel+Security+%26+Vulnerability+Research;EDR%2FAV+Evasion+%26+Exploit+Development;Kernel+CNA+CVE-2026-97601;Hack+The+Planet!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=750&lines=CX330+-+The+Most+Isolated+Star+in+the+Galaxy;Operating+in+Ring+0+Supervisor+Mode;Quiet+Dominance:+True+Power+Needs+No+Noise;Linux+Kernel+Security+%26+Vulnerability+Research;Advanced+Red+Teaming+%26+AD+Domination;Kernel+CNA+CVE-2026-97601;Hack+The+Planet!" alt="Typing SVG" />
 </p>
 
 </div>
@@ -49,18 +52,39 @@
 <br/>
 
 ```c
-/* Ring 0 Linux Kernel Security Researcher & Advanced Red Teamer */
+/* Ring 0 Linux Kernel Security Researcher & The Star */
 static const struct security_researcher kalpesh = {
     .handle        = "xploitoverload",
+    .alias         = "CX330 (The Star)",
     .real_name     = "Kalpesh Solanki",
     .privilege     = RING_0_SUPERVISOR,
     .roles         = { "Linux Kernel Security", "Advanced Red Teaming", "Exploit Development", "Vulnerability Research" },
     .cve_track     = { "CVE-2026-97601", "8 Upstream Kernel Contributions" },
     .subsystems    = { "netdev", "rtw88", "bonding", "tun/tap", "ieee802154", "mctp" },
     .offensive_kit = { "BloodHound", "Impacket", "Havoc/Sliver", "Ligolo-ng", "Hell's Gate", "Ghidra/GDB" },
-    .philosophy    = "Audit the seams. Hunt the races. Dominate the domain. Hack the planet."
+    .philosophy    = "Audit the seams. Hunt the races. Quiet dominance. Outshine the galaxy."
 };
 ```
+
+<br/>
+
+<h2><font color="#e50914" size="6">#</font> 🌌 The CX330 Chronicles & Research Field Notes</h2>
+
+> 🌟 *"CX330 is the most isolated young star that has been discovered in the universe."* — **NASA**  
+>  
+> *"True power needs no noise. Solitude breeds focus, and intense isolation allows a state of pure flow. Operating alone in the dark, dismantling obstacles with surgical precision, and outshining galaxies."*
+
+<div align="center">
+
+| Research Track | Focus Areas & Technical Deep Dives | Key Methodologies & Artifacts |
+| :--- | :--- | :--- |
+| **💥 Binary Exploitation & Pwn** | Stack Buffer Overflows on Linux x86, format string exploits, ROP chain synthesis, shellcoding | `THM Pwn101`, `HTB Stack Overflows`, `PicoCTF Pwn Series (Pwn106)` |
+| **🔐 Applied Cryptography for Muggles** | Chinese Remainder Theorem (CRT), Fermat's Little Theorem, Extended Euclidean Algorithm, Discrete Math | `密碼學任督二脈`, `Modular Arithmetic Inverses`, `RSA & Stream Ciphers` |
+| **⚡ Low-Level Systems & Hardware** | CPU registers, x86/ARM stack frames, Calling Conventions, Byte Code vs. Assembly vs. Machine Code | `CPU Register Internals`, `Kernel MMIO`, `Disassembly Walkthroughs` |
+| **🎯 Weaponized Tooling & Web Pwn** | Advanced SQLMap automation, automated fuzzing heuristics, UAPI boundary inspection | `SQLMap Weaponized Spellbook`, `Automated Injection Protocols` |
+| **🚩 HackTheBox & CTF Vault** | Comprehensive machine exploitation, cryptographic challenge breakdowns, privilege escalation | `BabyEncryption`, `Time Capsule`, `Insomnia`, `Locked Away`, `Racecar` |
+
+</div>
 
 <br/>
 
@@ -182,7 +206,7 @@ static const struct security_researcher kalpesh = {
 
 <br/>
 
-<h2><font color="#e50914" size="6">#</font> Contribution Activity</h2>
+<h2><font color="#e50914" size="6">#</font> Contribution Activity & Problem Solving</h2>
 
 <div align="center">
 
@@ -190,9 +214,20 @@ static const struct security_researcher kalpesh = {
 
 <br/><br/>
 
-<a href="https://streak-stats.demolab.com/?user=xploitoverload">
-  <img src="https://streak-stats.demolab.com/?user=xploitoverload&theme=radical&hide_border=true&border_radius=8&background=0a0a0a" alt="GitHub Streak" />
-</a>
+<table border="0">
+<tr>
+<td width="50%" align="center">
+  <a href="https://streak-stats.demolab.com/?user=xploitoverload">
+    <img src="https://streak-stats.demolab.com/?user=xploitoverload&theme=radical&hide_border=true&border_radius=8&background=0a0a0a" alt="GitHub Streak" />
+  </a>
+</td>
+<td width="50%" align="center">
+  <a href="https://leetcode.com/xploitoverload/">
+    <img src="https://leetcard.jacoblin.cool/xploitoverload?theme=dark&font=Fira%20Code&ext=activity" alt="LeetCode Stats" />
+  </a>
+</td>
+</tr>
+</table>
 
 </div>
 
