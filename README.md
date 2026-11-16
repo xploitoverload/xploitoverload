@@ -1,12 +1,12 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:990000,100:e50914&height=250&section=header&text=Kalpesh%20Solanki%20%7C%20CX330&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=The%20Star%20%7C%20Ring%200%20Kernel%20Security%20%7C%20Exploit%20Hunter%20%7C%20Red%20Teamer&descSize=18&descAlignY=55&descAlign=50"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:990000,100:e50914&height=250&section=header&text=Kalpesh%20Solanki%20%7C%20CX330&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=The%20Star%20%7C%20Ring%200%20Kernel%20Security%20%7C%20Exploit%20Dev%20%7C%20Red%20Team%20Operator&descSize=18&descAlignY=55&descAlign=50"/>
 
 <br/>
 
 <p align="center">
   <a href="https://github.com/xploitoverload">
-    <img src="https://img.shields.io/badge/GitHub-xploitoverload-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/GitHub-xploitoverload-0a0a0a?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
   <a href="https://linkedin.com/in/kalpesh11111">
     <img src="https://img.shields.io/badge/LinkedIn-Kalpesh_Solanki-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -32,76 +32,74 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=750&lines=CX330+-+The+Most+Isolated+Star+in+the+Galaxy;Operating+in+Ring+0+Supervisor+Mode;Quiet+Dominance:+True+Power+Needs+No+Noise;Linux+Kernel+Security+%26+Vulnerability+Research;Advanced+Red+Teaming+%26+AD+Domination;Kernel+CNA+CVE-2026-97601;Hack+The+Planet!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=21&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=750&lines=CX330+//+The+Most+Isolated+Star+in+the+Galaxy;root@xploitoverload:~%23+privilege:+RING_0_SUPERVISOR;Adversary+Emulation+%26+Active+Directory+Domination;Kernel+Vulnerability+Research+%26+UAF+Mitigation;Kernel+CNA+CVE-2026-97601;The+quieter+you+become,+the+more+you+are+able+to+hear.;Hack+The+Planet!" alt="Typing SVG" />
 </p>
 
 </div>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
 <br/>
 
-<h2>
-  <font color="#e50914" size="6">#</font> 
-  A̵̺̼̠̫͚͙͎͇͛̈́͑̌b̸̛̮̗̺͉̰̃͌́̏̑̇͋͝͝ò̴̡̪͖̻̱̫͇̪̍͘ų̵͚͙͉̳̱̯̳̩͚͑̋̌̂͛̽̍̌̒̕ẗ̵͖͔̳̜̬̝̝͉̪ ̸̻̦̣͓̪͉̳͖̜̺̉̔̓͌͂͌͛̎́ṃ̷̏̾̓ē̸͇͖̳̲͆̽̾̎̈́̊ 
-  <img src="images/mooshi.gif" width="35"/>
-</h2>
+## // 0x01: A̵̺̼̠̫͚͙͎͇͛̈́͑̌b̸̛̮̗̺͉̰̃͌́̏̑̇͋͝͝ò̴̡̪͖̻̱̫͇̪̍͘ų̵͚͙͉̳̱̯̳̩͚͑̋̌̂͛̽̍̌̒̕ẗ̵͖͔̳̜̬̝̝͉̪ ̸̻̦̣͓̪͉̳͖̜̺̉̔̓͌͂͌͛̎́ṃ̷̏̾̓ē̸͇͖̳̲͆̽̾̎̈́̊ <img src="images/mooshi.gif" width="35"/>
 
 <div align="center">
-  <img src="images/file_000000002fcc8208a2ea8a866fe8eaba.png" style="border-radius: 8px; max-width: 100%;" />
+  <img src="images/file_000000002fcc8208a2ea8a866fe8eaba.png" style="border-radius: 6px; max-width: 100%; border: 1px solid #333;" />
 </div>
 
 <br/>
 
 ```c
-/* Ring 0 Linux Kernel Security Researcher & The Star */
+/* Ring 0 Linux Kernel Security Researcher & Red Team Operator */
 static const struct security_researcher kalpesh = {
     .handle        = "xploitoverload",
     .alias         = "CX330 (The Star)",
     .real_name     = "Kalpesh Solanki",
     .privilege     = RING_0_SUPERVISOR,
-    .roles         = { "Linux Kernel Security", "Advanced Red Teaming", "Exploit Development", "Vulnerability Research" },
+    .roles         = { "Kernel Security", "Red Team Operations", "Exploit Development", "Vulnerability Research" },
     .cve_track     = { "CVE-2026-97601", "8 Upstream Kernel Contributions" },
     .subsystems    = { "netdev", "rtw88", "bonding", "tun/tap", "ieee802154", "mctp" },
-    .offensive_kit = { "BloodHound", "Impacket", "Havoc/Sliver", "Ligolo-ng", "Hell's Gate", "Ghidra/GDB" },
+    .offensive_kit = { "BloodHound", "Impacket", "Havoc C2", "Ligolo-ng", "Hell's Gate", "Ghidra/GDB" },
     .philosophy    = "Audit the seams. Hunt the races. Quiet dominance. Outshine the galaxy."
 };
 ```
 
 <br/>
 
-<h2><font color="#e50914" size="6">#</font> 🌌 The CX330 Chronicles & Research Field Notes</h2>
+## // 0x02: THE CX330 PROTOSTAR & OFFENSIVE RESEARCH VAULT
 
-> 🌟 *"CX330 is the most isolated young star that has been discovered in the universe."* — **NASA**  
+> *"CX330 is the most isolated young star that has been discovered in the universe."* — **NASA**  
 >  
-> *"True power needs no noise. Solitude breeds focus, and intense isolation allows a state of pure flow. Operating alone in the dark, dismantling obstacles with surgical precision, and outshining galaxies."*
+> *"The quieter you become, the more you are able to hear. Solitude breeds focus, and intense isolation allows a state of pure flow. Operating alone in the dark, dismantling obstacles with surgical precision, and outshining galaxies."*
 
 <div align="center">
 
-| Research Track | Focus Areas & Technical Deep Dives | Key Methodologies & Artifacts |
+| Track | Focus Areas & Technical Deep Dives | Weaponized Artifacts & References |
 | :--- | :--- | :--- |
-| **💥 Binary Exploitation & Pwn** | Stack Buffer Overflows on Linux x86, format string exploits, ROP chain synthesis, shellcoding | `THM Pwn101`, `HTB Stack Overflows`, `PicoCTF Pwn Series (Pwn106)` |
-| **🔐 Applied Cryptography for Muggles** | Chinese Remainder Theorem (CRT), Fermat's Little Theorem, Extended Euclidean Algorithm, Discrete Math | `密碼學任督二脈`, `Modular Arithmetic Inverses`, `RSA & Stream Ciphers` |
-| **⚡ Low-Level Systems & Hardware** | CPU registers, x86/ARM stack frames, Calling Conventions, Byte Code vs. Assembly vs. Machine Code | `CPU Register Internals`, `Kernel MMIO`, `Disassembly Walkthroughs` |
-| **🎯 Weaponized Tooling & Web Pwn** | Advanced SQLMap automation, automated fuzzing heuristics, UAPI boundary inspection | `SQLMap Weaponized Spellbook`, `Automated Injection Protocols` |
-| **🚩 HackTheBox & CTF Vault** | Comprehensive machine exploitation, cryptographic challenge breakdowns, privilege escalation | `BabyEncryption`, `Time Capsule`, `Insomnia`, `Locked Away`, `Racecar` |
+| **[0x01] Binary Exploitation & Pwn** | Stack buffer overflows on Linux x86, format string exploits, ROP chain synthesis, shellcoding | `THM Pwn101`, `HTB Stack Overflows`, `PicoCTF Pwn Series (Pwn106)` |
+| **[0x02] Applied Cryptanalysis & Math** | Chinese Remainder Theorem (CRT), Fermat's Little Theorem, Extended Euclidean Algorithm, Discrete Math | `密碼學任督二脈`, `Modular Arithmetic Inverses`, `RSA & Stream Ciphers` |
+| **[0x03] Low-Level Systems & Hardware**| CPU registers, x86/ARM stack frames, calling conventions, Byte Code vs Assembly vs Machine Code | `CPU Register Internals`, `Kernel MMIO`, `Disassembly Walkthroughs` |
+| **[0x04] Weaponized Injections & Web**  | Advanced SQLMap automation, automated fuzzing heuristics, UAPI boundary inspection | `SQLMap Weaponized Spellbook`, `Automated Injection Protocols` |
+| **[0x05] CTF & HTB Machine Root Vault**| Full machine intrusion, cryptographic challenge breakdowns, local privilege escalation | `BabyEncryption`, `Time Capsule`, `Insomnia`, `Locked Away`, `Racecar` |
 
 </div>
 
 <br/>
 
-<h2><font color="#e50914" size="6">#</font> Upstream Kernel Contributions</h2>
+## // 0x03: UPSTREAM KERNEL COMMIT TELEMETRY
 
 <div align="center">
 
-[![Linux Kernel](https://img.shields.io/badge/Linux_Kernel-Mainline_&_Netdev-blue?logo=linux&logoColor=white)](https://git.kernel.org)
-[![CVE-2026-97601](https://img.shields.io/badge/CVE-2026--97601-red?logo=security)](https://git.kernel.org/netdev/net/c/968f2b94a596)
-[![Upstream Tracker](https://img.shields.io/badge/Upstream_Tracker-8_Contributions-success?logo=github)](https://github.com/xploitoverload/upstream-contributions-tracker)
-[![Contributing Portfolio](https://img.shields.io/badge/Full_Portfolio-CONTRIBUTING.md-orange?logo=git)](CONTRIBUTING.md)
+[![Linux Kernel](https://img.shields.io/badge/Linux_Kernel-Mainline_&_Netdev-000000?style=for-the-badge&logo=linux&logoColor=white)](https://git.kernel.org)
+[![CVE-2026-97601](https://img.shields.io/badge/CVE-2026--97601-8b0000?style=for-the-badge&logo=security)](https://git.kernel.org/netdev/net/c/968f2b94a596)
+[![Upstream Tracker](https://img.shields.io/badge/Upstream_Tracker-8_Contributions-1a1a1a?style=for-the-badge&logo=github)](https://github.com/xploitoverload/upstream-contributions-tracker)
+[![Contributing Portfolio](https://img.shields.io/badge/Full_Portfolio-CONTRIBUTING.md-8b0000?style=for-the-badge&logo=git)](CONTRIBUTING.md)
 
 </div>
 
-> 🌟 **[👉 Click here to explore the full Upstream Contributions Portfolio & Technical Case Studies in CONTRIBUTING.md](CONTRIBUTING.md)**  
-> 📋 *Or click the **Contributing** tab in the repository navigation bar to view full patch breakdowns, senior maintainer endorsements, and vulnerability analyses.*  
-> 🧠 **[👉 Read the Ring 0 Systems & Kernel Interview Playbook](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/INTERVIEW_PREP_RING0.md)**
+> `[+]` **[View Full Upstream Contributions Portfolio & Vulnerability Root Causes in CONTRIBUTING.md](CONTRIBUTING.md)**  
+> `[+]` *Or click the **Contributing** tab in the repository navigation bar to inspect technical patch breakdowns and senior maintainer endorsements.*  
+> `[+]` **[Read the Ring 0 Systems & Kernel Interview Playbook](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/INTERVIEW_PREP_RING0.md)**
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
@@ -109,23 +107,35 @@ static const struct security_researcher kalpesh = {
 ├───────────────────┬─────────────────────────────────────────────────┬──────────────────┤
 │ Category          │ Scope & Subsystems                              │ Status           │
 ├───────────────────┼─────────────────────────────────────────────────┼──────────────────┤
-│ Kernel Security   │ netdev, tun, ieee802154 (CVE-2026-97601)        │ MERGED 🎉        │
-│ Wireless Drivers  │ rtw88 (PCIe ASPM DMI Quirk & Recovery Series)   │ COMMITTED / APPR │
-│ Core Networking   │ drivers/net/bonding (Link Invariant Guard v2)   │ FORMALLY APPR 🚀 │
-│ Protocol Hardening│ drivers/net/tun & net/mctp (SKB Panic On Warn)  │ ACTIVE REVIEW    │
-│ Desktop Security  │ xfce4-screensaver (Unlock Bypass & BadWindow)   │ MERGED 🎉        │
+│ Kernel Security   │ netdev, tun, ieee802154 (CVE-2026-97601)        │ [MERGED]         │
+│ Wireless Drivers  │ rtw88 (PCIe ASPM DMI Quirk & Recovery Series)   │ [COMMITTED]      │
+│ Core Networking   │ drivers/net/bonding (Link Invariant Guard v2)   │ [FORMALLY APPR]  │
+│ Protocol Hardening│ drivers/net/tun & net/mctp (SKB Panic On Warn)  │ [ACTIVE REVIEW]  │
+│ Desktop Security  │ xfce4-screensaver (Unlock Bypass & BadWindow)   │ [MERGED]         │
 └───────────────────┴─────────────────────────────────────────────────┴──────────────────┘
 ```
 
-> 📌 *Detailed root-cause whitepapers, standalone QEMU reproduction sandboxes, and verification logs are maintained in my [**upstream-contributions-tracker**](https://github.com/xploitoverload/upstream-contributions-tracker).*
+> `[*]` *Root-cause whitepapers, standalone QEMU reproduction sandboxes, and verification logs are maintained in [**upstream-contributions-tracker**](https://github.com/xploitoverload/upstream-contributions-tracker).*
 
 <br/>
 
-<h2><font color="#e50914" size="6">#</font> Red Teaming & Advanced Offensive Operations</h2>
+## // 0x04: RED TEAM OPERATIONS & ADVERSARY EMULATION
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                      OFFENSIVE TRADEcraft & ATTACK VECTORS                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ▸ Kernel Privilege Escalation (LPE) ▸ Active Directory Domination (AD CS)  │
+│  ▸ Memory Corruption & UAF Exploits  ▸ EDR & AMSI In-Memory Evasion         │
+│  ▸ Indirect Syscalls (Hell's Gate)   ▸ Kerberos Ticket Weaponization        │
+│  ▸ Multi-Hop Network Pivoting (C2)   ▸ Custom Shellcode Loaders & Crypters  │
+│  ▸ Protocol Fuzzing & Static SAST    ▸ Reverse Engineering & ROP Chaining   │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
 
 <div align="center">
 
-| Domain | Tactical Specialization & Methodologies | Offensive Tooling & Arsenal |
+| Operational Vector | Tactical Focus & Exploitation Methodologies | Weaponized Arsenal |
 | :--- | :--- | :--- |
 | **Active Directory & Identity** | Kerberos exploitation, AD CS abuse, DACL/ACE abuse, Domain Dominance, Token impersonation, Coerced authentication | `BloodHound`, `Impacket`, `Mimikatz`, `Rubeus`, `Certipy`, `PKINITtools`, `NetExec`, `Responder` |
 | **C2 & Adversary Emulation** | Command & control infrastructure, covert lateral movement, resilient egress channels, multi-stage beaconing | `Cobalt Strike`, `Havoc C2`, `Sliver`, `Mythic`, `Evil-WinRM`, `WMIExec`, `DCOM` |
@@ -138,7 +148,7 @@ static const struct security_researcher kalpesh = {
 
 <br/>
 
-<h2><font color="#e50914" size="6">#</font> Ring 0 Systems Domain Expertise</h2>
+## // 0x05: RING 0 DOMAIN EXPERTISE & ATTACK SURFACE
 
 ```
 ╔═══════════════════════════════════════════════════════════════════════════════════════════════════════╗
@@ -155,9 +165,22 @@ static const struct security_researcher kalpesh = {
 
 <br/>
 
-<h2><font color="#e50914" size="6">#</font> Tech Arsenal & Tools</h2>
+## // 0x06: OFFENSIVE TOOLING & WEAPONIZED ARSENAL
 
 <div align="center">
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Cobalt_Strike-DC143C?style=for-the-badge&logo=target&color=0a0a0a" alt="Cobalt Strike" />
+  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&color=0a0a0a" alt="Metasploit" />
+  <img src="https://img.shields.io/badge/BloodHound-DC143C?style=for-the-badge&logo=neo4j&color=0a0a0a" alt="BloodHound" />
+  <img src="https://img.shields.io/badge/Impacket-000000?style=for-the-badge&logo=python&color=0a0a0a" alt="Impacket" />
+  <img src="https://img.shields.io/badge/Ghidra-FF0000?style=for-the-badge&logo=redragon&color=0a0a0a" alt="Ghidra" />
+  <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burp-suite&color=0a0a0a" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Nmap-4682B4?style=for-the-badge&logo=nmap&color=0a0a0a" alt="Nmap" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&color=0a0a0a" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/SQLMap-CC0000?style=for-the-badge&logo=postgresql&color=0a0a0a" alt="SQLMap" />
+  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&color=0a0a0a" alt="Kali Linux" />
+</p>
 
 <table>
 <tr>
@@ -186,12 +209,7 @@ static const struct security_researcher kalpesh = {
 
 <br/>
 
-<h2>
-  <font color="#e50914" size="6">#</font> 
-  <img width="35" height="35" src="https://user-images.githubusercontent.com/118815227/218341043-776b003e-90ac-4e00-b6bf-1888c8b7864f.gif"> 
-  Open Source Analytics & 𝚂𝚝𝚊𝚝𝚜 
-  <img width="35" height="35" src="https://user-images.githubusercontent.com/118815227/218338229-2516daef-3362-43b5-948b-ea552af00ea2.gif">
-</h2>
+## // 0x07: SYSTEM TELEMETRY & ACTIVITY METRICS
 
 <div align="center">
 
@@ -205,8 +223,6 @@ static const struct security_researcher kalpesh = {
 </div>
 
 <br/>
-
-<h2><font color="#e50914" size="6">#</font> Contribution Activity & Problem Solving</h2>
 
 <div align="center">
 
@@ -233,8 +249,6 @@ static const struct security_researcher kalpesh = {
 
 <br/>
 
-<h2><font color="#e50914" size="6">#</font> Contribution Matrix</h2>
-
 <div align="center">
 
 <picture>
@@ -242,14 +256,10 @@ static const struct security_researcher kalpesh = {
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/xploitoverload/snk/output/github-contribution-grid-snake-dark.svg">
 </picture>
 
-</div>
-
-<br/>
-
-<div align="center">
+<br/><br/>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=xploitoverload&label=Profile%20Views&color=e50914&style=flat-square" alt="xploitoverload" />
+  <img src="https://komarev.com/ghpvc/?username=xploitoverload&label=TELEMETRY+VIEWS&color=e50914&style=flat-square" alt="xploitoverload" />
 </p>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:e50914,50:990000,100:0a0a0a&height=140&section=footer&animation=twinkling"/>

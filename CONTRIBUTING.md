@@ -1,4 +1,4 @@
-# 🛡️ Upstream Contributions & Systems Engineering Portfolio
+# // UPSTREAM CONTRIBUTIONS & SYSTEMS SECURITY PORTFOLIO
 
 **Author:** Kalpesh Solanki ([@xploitoverload](https://github.com/xploitoverload)) `<skalpesh942@gmail.com>`  
 **Domain:** Linux Kernel Engineering • Ring 0 Security • Subsystem Concurrency & Race Conditions • Device Drivers • Vulnerability Research  
@@ -7,24 +7,24 @@
 
 ---
 
-## 🏆 Upstream Contributions Scorecard
+## // 0x01: UPSTREAM CONTRIBUTIONS SCORECARD
 
 Below is the verified scorecard of upstream contributions, bug fixes, security hardening, and driver enhancements submitted to the Linux kernel and core systems software:
 
 | # | Subsystem / Project | Patch Title / Vulnerability Fixed | Key Reviewers & Maintainers | Upstream Status | Verification & Links |
 | :-: | :--- | :--- | :--- | :--- | :--- |
-| **1** | **Linux Kernel**<br>`drivers/net/tun`<br>`net/ieee802154` | **Unprivileged Supervisor NULL Dereference & Mutex Deadlock Fix**<br>Disallows setting `ARPHRD_IEEE802154` and `6LOWPAN` link types via `TUNSETLINK`. Prevents unprivileged users in user namespaces from crashing the kernel and permanently locking `rtnl_lock` / `genl_mutex`. | **Jakub Kicinski** (`kuba@kernel.org`)<br>**Willem de Bruijn** (`willemb@google.com`)<br>**Miquel Raynal** (`miquel.raynal@bootlin.com`) | **MERGED UPSTREAM 🎉**<br>(Applied to `netdev/net.git`) | **Commit:** [`968f2b94a596`](https://git.kernel.org/netdev/net/c/968f2b94a596)<br>**CVE:** `CVE-2026-97601`<br>**Syzbot:** [`9ea34da5ca6100593c90`](https://syzkaller.appspot.com/bug?extid=9ea34da5ca6100593c90) |
-| **2** | **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **HP Laptop 15s-fr5xxx PCIe ASPM L1/L1.2 & Deep LPS DMI Quirk**<br>Resolves RTL8822CE microcontroller clock desynchronization and packet stall caused by aggressive PCIe ASPM power states. | **Ping-Ke Shih** (`pkshih@realtek.com`) | **COMMITTED**<br>(In `pkshih/rtw-next` $\rightarrow$ Mainline) | **Commit:** [`04c99841872`](https://git.kernel.org/pub/scm/linux/kernel/git/pkshih/rtw.git/commit/?id=04c9984187228904f222681661c50db3f0c50b71) |
-| **3** | **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **Firmware Recovery & State Machine Concurrency (v6 1/3)**<br>`wifi: rtw88: clear RTW_FLAG_RESTARTING on stop and start failure`<br>Eliminates permanent deadlock of the restart flag during interface shutdown or failed initialization. | **Luka Gejak** (`luka.gejak@linux.dev`)<br>**Ping-Ke Shih** (`pkshih@realtek.com`)<br>**Zong-Zhe Yang** (`kevin_yang@realtek.com`) | **FORMALLY APPROVED 🚀**<br>(`Reviewed-by: Luka Gejak`<br>Vetted by Realtek) | Queued for merge into `rtw-next` by Ping-Ke Shih<br>[**Lore Archive (v6)**](https://lore.kernel.org/linux-wireless/20261113034704.21283-1-skalpesh942@gmail.com/) |
-| **4** | **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **Station Teardown Idempotency & UAF Fix (v6 2/3)**<br>`wifi: rtw88: skip already reset station in rtw_sta_remove()`<br>Cancels `rc_work` workqueue before checking `!vif`, clears `si->use_cfg_mask = false`, and guarantees safe station removal during async firmware resets. | **Luka Gejak** (`luka.gejak@linux.dev`)<br>**Ping-Ke Shih** (`pkshih@realtek.com`) | **FORMALLY APPROVED 🚀**<br>(`Reviewed-by: Luka Gejak`) | Queued for merge into `rtw-next` by Ping-Ke Shih<br>[**Lore Archive (v6)**](https://lore.kernel.org/linux-wireless/20261113034704.21283-1-skalpesh942@gmail.com/) |
-| **5** | **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **Consecutive LPS Leave Hang Recovery (v6 3/3)**<br>`wifi: rtw88: ps: trigger firmware recovery only after consecutive LPS leave failures on PCI`<br>Enforces a 3-consecutive-timeout threshold (`RTW_PS_HANG_MAX_CNT = 3`) gated on `FW_FEATURE_LPS_C2H` for PCIe devices, eliminating USB/SDIO atomic scheduling panics. | **Luka Gejak** (`luka.gejak@linux.dev`)<br>**Ping-Ke Shih** (`pkshih@realtek.com`) | **FORMALLY APPROVED 🚀**<br>(`Reviewed-by: Luka Gejak`) | Queued for merge into `rtw-next` by Ping-Ke Shih<br>[**Lore Archive (v6)**](https://lore.kernel.org/linux-wireless/20261113034704.21283-1-skalpesh942@gmail.com/) |
-| **6** | **Linux Kernel**<br>`drivers/net/bonding` | **Link-Layer Invariant Guard in `bond_enslave()` (v2)**<br>`bonding: reject IEEE 802.15.4 and 6LoWPAN devices in bond_enslave`<br>Prevents memory corruption and kernel NULL pointer dereference caused by enslaving non-Ethernet devices to a bonding master. | **Oliver Hartkopp** (`socketcan@hartkopp.net`)<br>**Hangbin Liu** (`liuhangbin@kylinos.cn`)<br>**Jay Vosburgh** (`jv@jvosburgh.net`) | **FORMALLY APPROVED 🚀**<br>(`Reviewed-by: Oliver Hartkopp`<br>`Reviewed-by: Hangbin Liu`) | Queued for merge into `net-next` by Jay Vosburgh / Jakub Kicinski<br>[**Lore Archive (v2)**](https://lore.kernel.org/netdev/20261112124840.12345-1-skalpesh942@gmail.com/) |
-| **7** | **Linux Kernel**<br>`drivers/net/tun`<br>`net/mctp` | **Unprivileged DoS via SKB Magic Panic Fix**<br>`tun: disallow setting ARPHRD_MCTP link type via TUNSETLINK`<br>Disallows `ARPHRD_MCTP` on TUN interfaces, preventing unprivileged users from triggering `panic_on_warn` via `WARN_ON(cb->magic != 0x4d435450)`. | **Willem de Bruijn** (`willemb@google.com`)<br>**Jeremy Kerr** (`jk@ozlabs.org`) | **Under Active Review** | Dispatched to `netdev@vger.kernel.org`<br>[**Lore Archive**](https://lore.kernel.org/netdev/20261108143431.489150-1-skalpesh942@gmail.com/) |
-| **8** | **Xfce Desktop**<br>`xfce4-screensaver` | **Session Unlock Security Bypass & X11 `BadWindow` Crash**<br>Traps transient X11 protocol errors and synchronizes dialog teardown timers, closing a security bypass where a 60-second dialog timeout caused the screensaver daemon to crash and unlock the desktop without authentication. | **Gaël Bonithon** (`@Tamaranch`) | **MERGED UPSTREAM 🎉**<br>(Release 4.20.3) | [**GitLab MR !67**](https://gitlab.xfce.org/apps/xfce4-screensaver/-/merge_requests/67)<br>Closes [Issue #204](https://gitlab.xfce.org/apps/xfce4-screensaver/-/work_items/204) |
+| **1** | **Linux Kernel**<br>`drivers/net/tun`<br>`net/ieee802154` | **Unprivileged Supervisor NULL Dereference & Mutex Deadlock Fix**<br>Disallows setting `ARPHRD_IEEE802154` and `6LOWPAN` link types via `TUNSETLINK`. Prevents unprivileged users in user namespaces from crashing the kernel and permanently locking `rtnl_lock` / `genl_mutex`. | **Jakub Kicinski** (`kuba@kernel.org`)<br>**Willem de Bruijn** (`willemb@google.com`)<br>**Miquel Raynal** (`miquel.raynal@bootlin.com`) | `[MERGED // UPSTREAM]`<br>(Applied to `netdev/net.git`) | **Commit:** [`968f2b94a596`](https://git.kernel.org/netdev/net/c/968f2b94a596)<br>**CVE:** `CVE-2026-97601`<br>**Syzbot:** [`9ea34da5ca6100593c90`](https://syzkaller.appspot.com/bug?extid=9ea34da5ca6100593c90) |
+| **2** | **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **HP Laptop 15s-fr5xxx PCIe ASPM L1/L1.2 & Deep LPS DMI Quirk**<br>Resolves RTL8822CE microcontroller clock desynchronization and packet stall caused by aggressive PCIe ASPM power states. | **Ping-Ke Shih** (`pkshih@realtek.com`) | `[COMMITTED]`<br>(In `pkshih/rtw-next` $\rightarrow$ Mainline) | **Commit:** [`04c99841872`](https://git.kernel.org/pub/scm/linux/kernel/git/pkshih/rtw.git/commit/?id=04c9984187228904f222681661c50db3f0c50b71) |
+| **3** | **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **Firmware Recovery & State Machine Concurrency (v6 1/3)**<br>`wifi: rtw88: clear RTW_FLAG_RESTARTING on stop and start failure`<br>Eliminates permanent deadlock of the restart flag during interface shutdown or failed initialization. | **Luka Gejak** (`luka.gejak@linux.dev`)<br>**Ping-Ke Shih** (`pkshih@realtek.com`)<br>**Zong-Zhe Yang** (`kevin_yang@realtek.com`) | `[FORMALLY APPROVED]`<br>(`Reviewed-by: Luka Gejak`<br>Vetted by Realtek) | Queued for merge into `rtw-next` by Ping-Ke Shih<br>[**Lore Archive (v6)**](https://lore.kernel.org/linux-wireless/20261113034704.21283-1-skalpesh942@gmail.com/) |
+| **4** | **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **Station Teardown Idempotency & UAF Fix (v6 2/3)**<br>`wifi: rtw88: skip already reset station in rtw_sta_remove()`<br>Cancels `rc_work` workqueue before checking `!vif`, clears `si->use_cfg_mask = false`, and guarantees safe station removal during async firmware resets. | **Luka Gejak** (`luka.gejak@linux.dev`)<br>**Ping-Ke Shih** (`pkshih@realtek.com`) | `[FORMALLY APPROVED]`<br>(`Reviewed-by: Luka Gejak`) | Queued for merge into `rtw-next` by Ping-Ke Shih<br>[**Lore Archive (v6)**](https://lore.kernel.org/linux-wireless/20261113034704.21283-1-skalpesh942@gmail.com/) |
+| **5** | **Linux Kernel**<br>`drivers/net/wireless/realtek/rtw88` | **Consecutive LPS Leave Hang Recovery (v6 3/3)**<br>`wifi: rtw88: ps: trigger firmware recovery only after consecutive LPS leave failures on PCI`<br>Enforces a 3-consecutive-timeout threshold (`RTW_PS_HANG_MAX_CNT = 3`) gated on `FW_FEATURE_LPS_C2H` for PCIe devices, eliminating USB/SDIO atomic scheduling panics. | **Luka Gejak** (`luka.gejak@linux.dev`)<br>**Ping-Ke Shih** (`pkshih@realtek.com`) | `[FORMALLY APPROVED]`<br>(`Reviewed-by: Luka Gejak`) | Queued for merge into `rtw-next` by Ping-Ke Shih<br>[**Lore Archive (v6)**](https://lore.kernel.org/linux-wireless/20261113034704.21283-1-skalpesh942@gmail.com/) |
+| **6** | **Linux Kernel**<br>`drivers/net/bonding` | **Link-Layer Invariant Guard in `bond_enslave()` (v2)**<br>`bonding: reject IEEE 802.15.4 and 6LoWPAN devices in bond_enslave`<br>Prevents memory corruption and kernel NULL pointer dereference caused by enslaving non-Ethernet devices to a bonding master. | **Oliver Hartkopp** (`socketcan@hartkopp.net`)<br>**Hangbin Liu** (`liuhangbin@kylinos.cn`)<br>**Jay Vosburgh** (`jv@jvosburgh.net`) | `[FORMALLY APPROVED]`<br>(`Reviewed-by: Oliver Hartkopp`<br>`Reviewed-by: Hangbin Liu`) | Queued for merge into `net-next` by Jay Vosburgh / Jakub Kicinski<br>[**Lore Archive (v2)**](https://lore.kernel.org/netdev/20261112124840.12345-1-skalpesh942@gmail.com/) |
+| **7** | **Linux Kernel**<br>`drivers/net/tun`<br>`net/mctp` | **Unprivileged DoS via SKB Magic Panic Fix**<br>`tun: disallow setting ARPHRD_MCTP link type via TUNSETLINK`<br>Disallows `ARPHRD_MCTP` on TUN interfaces, preventing unprivileged users from triggering `panic_on_warn` via `WARN_ON(cb->magic != 0x4d435450)`. | **Willem de Bruijn** (`willemb@google.com`)<br>**Jeremy Kerr** (`jk@ozlabs.org`) | `[UNDER ACTIVE REVIEW]` | Dispatched to `netdev@vger.kernel.org`<br>[**Lore Archive**](https://lore.kernel.org/netdev/20261108143431.489150-1-skalpesh942@gmail.com/) |
+| **8** | **Xfce Desktop**<br>`xfce4-screensaver` | **Session Unlock Security Bypass & X11 `BadWindow` Crash**<br>Traps transient X11 protocol errors and synchronizes dialog teardown timers, closing a security bypass where a 60-second dialog timeout caused the screensaver daemon to crash and unlock the desktop without authentication. | **Gaël Bonithon** (`@Tamaranch`) | `[MERGED // UPSTREAM]`<br>(Release 4.20.3) | [**GitLab MR !67**](https://gitlab.xfce.org/apps/xfce4-screensaver/-/merge_requests/67)<br>Closes [Issue #204](https://gitlab.xfce.org/apps/xfce4-screensaver/-/work_items/204) |
 
 ---
 
-## 🎖️ Senior Subsystem Maintainers Hall of Fame
+## // 0x02: SENIOR KERNEL MAINTAINER NETWORK & CO-AUTHORS
 
 Recognition, co-authoring, and formal sign-offs received from lead kernel maintainers across major subsystems:
 
@@ -47,7 +47,7 @@ Recognition, co-authoring, and formal sign-offs received from lead kernel mainta
 
 ---
 
-## 🔬 In-Depth Vulnerability & Architectural Case Studies
+## // 0x03: TECHNICAL VULNERABILITY ARCHITECTURE & ROOT CAUSES
 
 ### 1. Unprivileged Supervisor NULL Dereference & Netlink Deadlock (`CVE-2026-97601`)
 * **Vulnerability Target:** `drivers/net/tun.c` and `net/ieee802154/nl-mac.c`
@@ -110,7 +110,7 @@ Recognition, co-authoring, and formal sign-offs received from lead kernel mainta
 
 ---
 
-## 🛠️ Candidate In-Tree Kernel Fixes (Mainline Ready)
+## // 0x04: AUDITED IN-TREE MAINLINE FINDINGS
 
 Two additional vulnerability and correctness fixes discovered during local code audits and verified against upstream Linux `master`:
 
@@ -130,9 +130,9 @@ Two additional vulnerability and correctness fixes discovered during local code 
 
 ---
 
-## 🤝 Upstream Contribution & Mailing List Guidelines
+## // 0x05: OPERATOR KERNEL PATCH DISPATCH PROTOCOLS
 
-When collaborating or submitting patches alongside this work, the following strict kernel guidelines apply:
+When submitting patches or collaborating alongside this work, the following strict kernel guidelines apply:
 
 1. **Plain-Text Formatting Only:** All patches sent to `vger.kernel.org` mailing lists must strictly follow plain-text formatting (RFC 2822). HTML email is rejected by `mlmmj`.
 2. **Commit Message Discipline:** Explain *why* the bug exists, provide the exact stack trace or Syzbot ExtID, explain *how* the fix resolves it without regressions, and cite the originating commit with `Fixes: <12-char-hash> ("commit title")`.
@@ -141,7 +141,7 @@ When collaborating or submitting patches alongside this work, the following stri
 
 ---
 
-## 🔗 Repository Navigation & Quick Links
+## // 0x06: TELEMETRY & REPOSITORY NAVIGATION
 
 * [**Upstream Contributions Tracker Repository**](https://github.com/xploitoverload/upstream-contributions-tracker)
 * [**Ring 0 Systems & Kernel Interview Playbook**](https://github.com/xploitoverload/upstream-contributions-tracker/blob/main/INTERVIEW_PREP_RING0.md)
