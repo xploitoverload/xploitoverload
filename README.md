@@ -226,7 +226,9 @@ static const struct security_researcher kalpesh = {
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.ashutosh-dwivedi0710.workers.dev/graph?username=xploitoverload&bg_color=000000&color=7FBA00&title_color=F25022&line=00A4EF&point=FFB900&area_color=00A4EF&area=true&hide_border=true&custom_title=KALPESH%20SOLANKI's%20Contribution%20Graph" width="100%"/>
+<a href="https://github.com/xploitoverload/github-readme-streak-stats">
+  <img src="https://xploitoverload.github.io/github-readme-streak-stats/activity-graph.svg" width="100%" alt="Kalpesh Solanki Contribution Graph" />
+</a>
 
 <br/><br/>
 
