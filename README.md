@@ -109,8 +109,8 @@ static const struct security_researcher kalpesh = {
 ├───────────────────┼─────────────────────────────────────────────────┼──────────────────┤
 │ Kernel Security   │ netdev, tun, ieee802154 (CVE-2026-97601)        │ [MERGED]         │
 │ Wireless Drivers  │ rtw88 (PCIe ASPM DMI Quirk & Recovery Series)   │ [COMMITTED]      │
-│ Core Networking   │ drivers/net/bonding (Link Invariant Guard v2)   │ [FORMALLY APPR]  │
-│ Protocol Hardening│ drivers/net/tun & net/mctp (SKB Panic On Warn)  │ [ACTIVE REVIEW]  │
+│ Core Networking   │ drivers/net/bonding (Link Invariant Guard v2)   │ [MERGED]         │
+│ Protocol Hardening│ drivers/net/tun & net/mctp (SKB Panic On Warn)  │ [MERGED]         │
 │ Desktop Security  │ xfce4-screensaver (Unlock Bypass & BadWindow)   │ [MERGED]         │
 └───────────────────┴─────────────────────────────────────────────────┴──────────────────┘
 ```
