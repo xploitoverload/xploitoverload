@@ -250,10 +250,12 @@ static const struct security_researcher kalpesh = {
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xploitoverload/snk/output/github-contribution-grid-snake-dark.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/xploitoverload/snk/output/github-contribution-grid-snake-dark.svg">
-</picture>
+<a href="https://github.com/xploitoverload/github-readme-streak-stats" target="_blank" style="display: block" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://xploitoverload.github.io/github-readme-streak-stats/king-cobra.svg">
+    <img alt="Kalpesh Solanki King Cobra Strike Protocol" src="https://xploitoverload.github.io/github-readme-streak-stats/king-cobra.svg" width="100%">
+  </picture>
+</a>
 
 <br/><br/>
 
