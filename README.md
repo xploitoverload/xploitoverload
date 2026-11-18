@@ -213,11 +213,8 @@ static const struct security_researcher kalpesh = {
 
 <div align="center">
 
-<a href="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats?user_id=184857390" target="_blank" style="display: block" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=184857390&image_size=auto&color_scheme=dark" width="770" height="auto">
-    <img alt="Dashboard stats of @xploitoverload" src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=184857390&image_size=auto&color_scheme=light" width="770" height="auto">
-  </picture>
+<a href="https://github.com/xploitoverload/github-readme-streak-stats" target="_blank" style="display: block" align="center">
+  <img alt="Dashboard stats of @xploitoverload" src="https://xploitoverload.github.io/github-readme-streak-stats/dashboard.svg" width="770" height="auto">
 </a>
 
 </div>
