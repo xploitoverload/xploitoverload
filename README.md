@@ -233,8 +233,8 @@ static const struct security_researcher kalpesh = {
 <table border="0">
 <tr>
 <td width="50%" align="center">
-  <a href="https://streak-stats.demolab.com/?user=xploitoverload">
-    <img src="https://streak-stats.demolab.com/?user=xploitoverload&theme=radical&hide_border=true&border_radius=8&background=0a0a0a" alt="GitHub Streak" />
+  <a href="https://github.com/xploitoverload/github-readme-streak-stats">
+    <img src="https://xploitoverload.github.io/github-readme-streak-stats/streak-microsoft-dark.svg" alt="GitHub Streak" />
   </a>
 </td>
 <td width="50%" align="center">
