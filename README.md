@@ -2,6 +2,10 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:990000,100:e50914&height=250&section=header&text=Kalpesh%20Solanki%20%7C%20CX330&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=The%20Star%20%7C%20Ring%200%20Kernel%20Security%20%7C%20Exploit%20Dev%20%7C%20Red%20Teamer&descSize=18&descAlignY=55&descAlign=50"/>
 
+<a href="https://github.com/xploitoverload" title="Lain Iwakura // Wired Live2D Companion">
+  <img align="right" src="images/lain_live2d.gif" width="165" alt="Lain Iwakura Live2D Companion" />
+</a>
+
 <br/>
 
 <p align="center">
