@@ -36,7 +36,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=zzIKp5CHn-0" target="_blank" onclick="window.open(this.href, 'targetWindow', 'width=800,height=600'); return false;" title="Play Jake Hill - GT350 on YouTube">
+  <a href="https://xploitoverload.github.io/github-readme-streak-stats/gt350.html" target="_blank" title="Play System Audio: Jake Hill - GT350">
     <img src="https://img.shields.io/badge/▶_SYSTEM_AUDIO-JAKE_HILL_//_GT350-e50914?style=for-the-badge&logo=youtube&logoColor=white" alt="Play GT350 by Jake Hill" />
   </a>
 </p>
