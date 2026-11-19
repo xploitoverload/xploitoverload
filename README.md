@@ -36,9 +36,11 @@
 </p>
 
 <p align="center">
-  <a href="https://xploitoverload.github.io/github-readme-streak-stats/gt350.html" target="_blank" title="Play System Audio: Jake Hill - GT350">
+  <a href="https://xploitoverload.github.io/github-readme-streak-stats/gt350.html" target="_blank" title="Play System Audio: Jake Hill - GT350 (Ctrl+Click to Open in Background Tab)">
     <img src="https://img.shields.io/badge/▶_SYSTEM_AUDIO-JAKE_HILL_//_GT350-e50914?style=for-the-badge&logo=youtube&logoColor=white" alt="Play GT350 by Jake Hill" />
   </a>
+  <br/>
+  <sub><em>(Tip: <strong>Ctrl + Click</strong> or <strong>Middle-Click</strong> to play in background tab while browsing)</em></sub>
 </p>
 
 </div>
