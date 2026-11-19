@@ -35,6 +35,12 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=21&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=750&lines=CX330+//+The+Most+Isolated+Star+in+the+Galaxy;root@xploitoverload:~%23+privilege:+RING_0_SUPERVISOR;Adversary+Emulation+%26+Active+Directory+Domination;Kernel+Vulnerability+Research+%26+UAF+Mitigation;Kernel+CNA+CVE-2026-97601;The+quieter+you+become,+the+more+you+are+able+to+hear.;Hack+The+Planet!" alt="Typing SVG" />
 </p>
 
+<p align="center">
+  <a href="https://xploitoverload.github.io/github-readme-streak-stats/gt350.html" target="_blank" title="Play System Audio: Jake Hill - GT350">
+    <img src="https://img.shields.io/badge/▶_SYSTEM_AUDIO-JAKE_HILL_//_GT350-e50914?style=for-the-badge&logo=youtube&logoColor=white" alt="Play GT350 by Jake Hill" />
+  </a>
+</p>
+
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
